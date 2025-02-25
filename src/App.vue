@@ -1,25 +1,35 @@
 <template>
   <HeaderComp />
+  <MainSection />
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
 import HeaderComp from "./components/HeaderComp.vue";
-@Options({
+import MainSection from "./components/MainSection.vue";
+export default {
+  name: "App",
   components: {
     HeaderComp,
+    MainSection,
   },
-})
-export default class App extends Vue {}
+
+  data() {
+    return {};
+  },
+};
 </script>
 
-<style>
+<style lang="scss">
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-primary;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+  margin: 5% 10%;
+  background: $primary-color;
 }
 </style>
