@@ -33,6 +33,8 @@ export default {
   align-items: center;
   justify-content: space-between;
   font-family: $font-primary;
+  margin-bottom: 15px;
+  padding: 0 20px;
 }
 
 .nav-list {
@@ -55,6 +57,22 @@ export default {
 
   &:hover {
     color: $vermillion;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item {
+    margin: 10px 0;
   }
 }
 </style>

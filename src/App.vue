@@ -1,9 +1,11 @@
 <template>
   <HeaderComp />
   <MainSection />
+  <FooterComp />
 </template>
 
 <script lang="ts">
+import FooterComp from "./components/FooterComp.vue";
 import HeaderComp from "./components/HeaderComp.vue";
 import MainSection from "./components/MainSection.vue";
 export default {
@@ -11,6 +13,7 @@ export default {
   components: {
     HeaderComp,
     MainSection,
+    FooterComp,
   },
 
   data() {
@@ -29,7 +32,9 @@ export default {
 
 #app {
   height: 100vh;
-  margin: 5% 10%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   background: $primary-color;
 }
 </style>
