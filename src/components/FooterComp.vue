@@ -73,6 +73,7 @@ export default {
 .img img {
   width: 110px;
   height: 140px;
+  margin-top: 30px;
 }
 
 .title-number {
@@ -94,5 +95,34 @@ export default {
 .text-2 {
   font-size: 13px;
   color: $gunmetal;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .img img {
+    width: 110px;
+    height: 180px;
+    margin-top: 30px;
+  }
+
+  title-number {
+    font-size: 14px;
+    color: $vermillion;
+  }
+
+  .sub_title {
+    font-size: 12px;
+    color: $secondary-color;
+    font-weight: 800;
+    cursor: pointer;
+  }
+
+  .text-2 {
+    font-size: 12px;
+    color: $gunmetal;
+  }
 }
 </style>
