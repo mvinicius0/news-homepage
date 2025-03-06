@@ -57,23 +57,28 @@ export default {
   font-family: $font-primary;
   padding: 20px;
 }
+
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .footer-content {
   display: flex;
   gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  max-width: 300px;
 }
 
 .img img {
-  width: 110px;
-  height: 140px;
-  margin-top: 30px;
+  width: 100px;
+  height: 155px;
 }
 
 .title-number {
@@ -100,29 +105,32 @@ export default {
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    max-width: 100%;
+    text-align: left;
   }
 
   .img img {
-    width: 110px;
-    height: 180px;
-    margin-top: 30px;
+    width: 80px;
+    height: 12%;
+    margin-top: 10px;
+    margin-right: 15px;
   }
 
-  title-number {
-    font-size: 14px;
-    color: $vermillion;
+  .title-number {
+    font-size: 24px;
   }
 
   .sub_title {
-    font-size: 12px;
-    color: $secondary-color;
-    font-weight: 800;
-    cursor: pointer;
+    font-size: 16px;
   }
 
   .text-2 {
     font-size: 12px;
-    color: $gunmetal;
   }
 }
 </style>

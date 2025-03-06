@@ -8,6 +8,7 @@
 import FooterComp from "./components/FooterComp.vue";
 import HeaderComp from "./components/HeaderComp.vue";
 import MainSection from "./components/MainSection.vue";
+
 export default {
   name: "App",
   components: {
@@ -36,5 +37,11 @@ export default {
   margin: 0 auto;
   padding: 20px;
   background: $primary-color;
+}
+
+@media (max-width: 768px) {
+  #app {
+    padding: 0;
+  }
 }
 </style>

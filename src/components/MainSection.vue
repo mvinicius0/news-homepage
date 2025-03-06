@@ -161,9 +161,26 @@ export default {
   .text-container {
     flex-direction: column;
   }
+  .text-content {
+    flex-direction: column;
+  }
+
+  .image img {
+    width: 98%;
+    height: 300px;
+  }
+
+  .text {
+    font-size: 1rem;
+    color: $gunmetal;
+    margin-left: 5px;
+  }
 
   .title {
     font-size: 2rem;
+    width: 250px;
+    margin-top: 1px;
+    margin-bottom: 0;
   }
   .layout {
     grid-template-columns: 1fr;
@@ -171,10 +188,27 @@ export default {
 
   .main-content {
     grid-template-columns: 1fr;
+    grid-column: auto;
   }
 
   .news {
     margin-top: 20px;
+  }
+
+  .btn {
+    background: $vermillion;
+    color: $secondary-color;
+    padding: 10px 20px;
+    margin-left: 5px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+    letter-spacing: 0.1em;
+    &:hover {
+      background: $secondary-color;
+      color: $primary-color;
+    }
   }
 }
 </style>
